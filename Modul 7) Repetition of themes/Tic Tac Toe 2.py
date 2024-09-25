@@ -46,7 +46,7 @@ def input_data_player(board: list[list[str]], number_player: int, mark: str) -> 
 
         col_index = input("Введите индекс столбца: ")
         if col_index not in ('0', '1', '2'):
-            print("Индекс столбца должен быть число от 0 до 2!")
+            print("Индекс столбца должен быть числом от 0 до 2!")
             print_board(board)
             continue
 
