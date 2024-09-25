@@ -78,13 +78,14 @@ def main() -> None:
     max_amount_items = 9
     for i in range(max_amount_items):
 
-        number_player = 1
-        if input_data_player(board, number_player, 'X'):
-            print(f"Игрок {number_player} победил!")
-            break
+        if i % 2 == 0:
+            number_player = 1
+            mark = 'X'
+        else:
+            number_player = 2
+            mark = '0'
 
-        number_player = 2
-        if input_data_player(board, number_player, '0'):
+        if input_data_player(board, number_player, mark):
             print(f"Игрок {number_player} победил!")
             break
 
