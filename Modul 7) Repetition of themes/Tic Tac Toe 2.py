@@ -89,7 +89,7 @@ def main() -> None:
             break
 
         if i == max_amount_items - 1:
-            print(f"Ничья!")
+            print("Ничья!")
 
 
 main()
